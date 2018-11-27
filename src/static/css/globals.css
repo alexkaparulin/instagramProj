@@ -1,0 +1,566 @@
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+body{
+    background: whitesmoke;
+    font-family: 'Open Sans Hebrew', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* Topbar component */
+
+.top-bar{
+    display: flex;
+    align-items:  center;
+    border-bottom:2px solid lightgray;;
+    background: white;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.topbarLog{
+    text-decoration: none;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 9px;
+    height: 45px;
+    width: 50px;
+    cursor: pointer;
+    margin-right: -25px;
+    margin-left: 40px;
+}
+.topbarsignup{
+    text-decoration: none;
+    color: #3897f0;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 9px;
+    height: 45px;
+    width: 350px;
+    cursor: pointer;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+    margin-left: 150px;
+}
+.topbarLine{
+    border-left: 2px solid black;
+    height: 38px;
+    margin-left: 15px;
+}
+.topbarIconInstagram{
+    margin-top: 5px;
+    height: 45px;
+    width: 150px;
+    margin-left: 15px;
+}
+
+
+
+
+/* Links component */
+.link-bar{
+    display: flex;
+    list-style-type: none;
+    position: fixed;
+    align-content: center;
+    top: 10px;
+    right: 40px;
+    
+}
+.link-bar li{
+    margin-left: 30px;
+}
+.exIcon{
+    height:30px;
+    width: 30px;
+}
+.likeIcon{
+    height:30px;
+    width: 30px;
+}
+.userIcon{
+    height:30px;
+    width: 30px;
+}
+.likeBar{
+    position: absolute;
+    top: 50px;
+    right: 210px;
+    border: 2px solid lightgray;
+    height: 450px;
+    width: 650px;
+    display: none;
+    background: white;
+    overflow-y: auto;
+}
+.bline{
+    position: relative;
+    z-index: 1;
+    top: 16px;
+    right: -10.5px;
+    border-bottom: 2px solid white;
+    width: 14.5px;
+    display: none;
+}
+.triangle{
+    position: absolute;
+    top: 32px;
+    right: 285px;
+    height: 30px;
+    width: 30px;
+    display: none;
+
+}
+
+
+
+
+/*Search component  */
+.searchInput{
+    margin: 0px 0  0 300px;
+    border-radius: 4px;
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+.searchicon{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: -200px;
+    top: 5px;
+}
+
+
+
+
+
+/* Likes component */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.photoLikes{
+    display: flex;
+    /* border: 2px solid green; */
+    padding: 10px;
+    align-items: center;
+    font-size: 17px;
+    color: rgb(34, 33, 33);
+    margin-bottom: 10px;
+}
+.photoLikes span{
+    margin: 0px 4px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000;
+}
+.personliked{
+    border-radius: 100%;
+    /* border: 2px solid red; */
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.photoLiked{
+    align-self: center;
+    /* border:2px solid blue; */
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -190px;
+    justify-self: flex-end;
+}
+
+
+
+
+
+/* Homepage component */
+.homeMainPage{
+    display: flex;
+    margin: 60px 0 0 0;
+    justify-content: center;
+    background: whitesmoke;
+}
+.userPost{
+    height: 900px;
+    width: 800px;
+    border: 1px solid gray;
+    background: white;
+}
+.userData{
+    position:sticky;
+    top: 100px;
+    height: 800px;
+    width: 400px;
+    margin:0 0 0 40px;
+    border: 2px solid gray;
+    background: white;
+}
+.userPicName{
+    border:1px solid black;
+    height:32%;
+}
+.userFriendsStory{
+    border:1px solid black;
+    height: 32%;
+}
+.userFriendSugg{
+    height: 32%;
+    border:1px solid black;
+
+}
+.userLinksList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid black;
+    height: 4%;
+}
+.userLinksList ul{
+    display: flex;
+    /* list-style-type: none; */
+}
+.userLinksList ul li{
+    font-size: 10px;
+    margin-left: 8px;
+    padding-right: 10px;
+    font-weight: bolder;
+}
+.userBio{
+    border: 2px solid gray;
+    height: 10%;
+}
+
+
+
+
+/* Signup component */
+.mfrontPage{
+    display: flex;
+    flex-direction: column;
+}
+.frontPage{
+    display: flex;
+    justify-content: center;
+    /* border:2px solid red; */
+}
+
+
+
+
+
+
+
+/*Iphones component  */
+
+.iphones{
+    margin-top: 125px; 
+    /* border: 2px solid black; */
+    height: 850px;
+    width: 620px;
+    margin-right: -25px;
+}
+.iphones img{
+    width: 100%;
+    height:100%;
+}
+.picChange{
+    transition: opacity 1s ease-in-out infinite;
+    position: absolute;
+    height: 590px;
+    /* border: 2px solid black; */
+    width: 330px;
+    left: 516px;
+    top: 343px;
+    background: url('/src/static/images/FrontInstaExamaple1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+/* Register component */
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border:2px solid lightgray;
+    height: 735px;
+    width: 465px;
+    background: white;
+}
+.instaLogo{
+    margin-top: 35px;
+    height: 10%;
+    width: 50%;
+}
+.p1{
+    margin-top: 20px;
+    color:rgb(160, 158, 158);
+    font-size: 21px;
+    font-weight: 600;
+}
+.p2{
+    margin-top: -22px;
+    color:rgb(160, 158, 158);
+    font-size: 21px;
+    font-weight: 600;
+}
+.logface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 9px;
+    height: 45px;
+    width: 350px;
+    cursor: pointer;
+}
+.fLogo{
+    position: relative;
+    margin-right: 10px;
+    height: 23px;
+    width: 23px;
+}
+.or{
+    display: flex;
+    margin-top: 25px;
+    color:rgb(160, 158, 158);
+    font-weight: 600;
+    font-size: 19px;
+}
+.lline{
+    margin-right: 25px;
+    border-bottom:1.5px solid rgb(228, 224, 230);
+    width: 135px;
+    margin-bottom: 15px;
+}
+.rline{
+    margin-left: 25px;
+    border-bottom:1.5px solid rgb(228, 224, 230);
+    width: 135px;
+    margin-bottom: 15px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+input{
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    outline: none; 
+    border:1px solid rgb(206, 201, 201);
+}
+input::placeholder{
+    color:rgb(165, 165, 165);
+    font-weight: 100;
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 9px;
+    height: 40px;
+    width: 365px;
+    cursor: pointer;
+    outline: none;
+}
+.t1,.t2,.t3{
+    color:rgb(165, 165, 165);
+    font-size: 17px;
+}
+strong{
+    color:rgb(165, 165, 165);
+}
+.t2,.t3{
+    margin-top: -17px;
+}
+
+
+
+
+
+
+
+/* Login component */
+
+.loginPlusUnder{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -170px;
+    right: 310px;
+}
+.logIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:19px;
+    width: 465px;
+    height: 90px;
+    background: white;
+    border:2px solid lightgray;
+    align-self: flex-end;
+    /* position: relative; */
+    /* top: -170px;
+    right: 300px; */
+}
+span{
+    color:blue;
+    margin-left: 7px;
+}
+.getApp{
+    /* border: 2px solid red; */
+    display: flex;
+    align-self: flex-end;
+    font-size: 19px;
+    position: relative;
+    /* top: -160px; */
+    right:170px;
+}
+.downloads{
+    display: flex;
+    /* border:2px solid blue; */
+    align-self: flex-end;
+    position: relative;
+    right: -50px;
+}
+.appstore,.goostore{
+    height: 60px;
+    width: 200px;
+    margin-right: 10px;
+}
+.mic{
+    height: 60px;
+    width: 160px;
+}
+
+
+
+
+
+
+/* Signupbottom */
+
+.footerList{
+    position: relative;
+    top: -35px;
+    bottom: 60px;
+    right: -200px;
+}
+.footerList ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.footerList ul li{
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(46, 46, 64);
+}
+.footerList span{
+    position: relative;
+    right: -150px;
+    color:gray;
+}
+
+
+
+
+
+
+/* Explore  */
+
+.exploreMain{
+    margin-top: 100px;
+    border: 2px solid black;
+}
+.exploreSlider ul {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.exploreSlider ul li{
+    flex-basis: 12%;
+    margin: 10px;
+    height: 100px;
+    width:40px;
+    border-radius:8px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.exploreSlider  ul img{
+    height: 100%;
+    width: 100%;
+}
+.exploreImages ul{
+    margin-top: 20px;
+    border: 2px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.exploreImages ul li{
+    border: 2px solid red;
+    margin: 20px;
+    flex-grow: 1;
+    height: 350px;
+    text-justify: newspaper;
+    flex-basis:calc(33.333% - 60px);
+}
+.exploreImages ul img {
+    width: 100%;
+    height: 100%;
+}
+
+
