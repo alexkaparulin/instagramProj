@@ -1,32 +1,19 @@
 import React,{Component} from 'react'
+import Homepagepost from './Homepagepost';
+import Homeuserdata from './Homeuserdata';
 
 class Homepage extends Component {
     render(){
         return(
             <div className="homeMainPage">
+            <div className="userPostContainer">
             {/* Post user did */}
-               <div className="userPost">
-                 <div className="userBio">
-                 
-                 </div> 
-               </div>
-               {/* Stickey user information and etc */}
-               <div className="userData">
-                  <div className="userPicName"></div>
-                  <div className="userFriendsStory"></div>
-                  <div className="userFriendSugg"></div>
-                  <div className="userLinksList">
-                    <ul>
-                        <li>About Us</li>
-                        <li>Support</li>
-                        <li>Press</li>
-                        <li>API</li>
-                        <li>Jobs</li>
-                        <li>Privacy</li>
-                        <li>Terms</li>
-                    </ul>
-                  </div>
-                </div>
+              <Homepagepost  user="dsfsd"/>
+              <Homepagepost />
+              <Homepagepost />
+            </div>
+               {/* Sticky user information and etc */}
+               <Homeuserdata/>
             </div>
         )
     }
